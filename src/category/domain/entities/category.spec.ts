@@ -57,7 +57,7 @@ describe("Category Tests", () => {
 
 
         expect(category.id).toBeDefined();
-        expect(uuidValidate(category.id.id)).toBeTruthy();
+        expect(uuidValidate(category.id.value)).toBeTruthy();
 
     });
 
