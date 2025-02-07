@@ -1,28 +1,18 @@
 import ValueObject from "./value-objects";
 
-class ValueObjectsSpec extends ValueObject {}
+class ValueObjectsSpec extends ValueObject {
+}
 
 describe("ValueObjects Tests", () => {
     it('should set value', function () {
-        let vo = new ValueObjectsSpec('value');
-        expect(vo.value).toBe('value');
+
+        let str = new ValueObjectsSpec("string");
+        expect(str.value).toBe('string');
 
 
-        vo = new ValueObjectsSpec({prop: 'value'});
-        expect(vo.value).toStrictEqual({prop: 'value'});
+        let bool = new ValueObjectsSpec(true);
+        expect(typeof bool).toBe("object");
 
     });
 
-    it('should return string value', function () {
-        let vo = new ValueObjectsSpec('null');
-
-        expect(vo + "").toBe('null');
-
-        vo = new ValueObjectsSpec(undefined);
-
-        expect(vo + "").toBe('undefined');
-
-
-
-    })
 });

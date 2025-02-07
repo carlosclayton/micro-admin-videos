@@ -43,7 +43,7 @@ const config: Config = {
   //   "clover"
   // ],
 
-  // An object that configures minimum threshold enforcement for coverage results
+  // An objects that configures minimum threshold enforcement for coverage results
   // coverageThreshold: undefined,
 
   // A path to a custom dependency extractor
